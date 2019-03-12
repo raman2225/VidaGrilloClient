@@ -1,0 +1,16 @@
+<h1>Players</h1>
+<div *ngIf="players" class="row">
+    <div *ngFor="let player of players" class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="../../assets/profilePics/{{player.playerId}}.jpg" width="200" height="250">
+        </div>
+        <div class="card-content">
+          <p><b>{{player.playerName}}</b></p>
+          <p><b>Role : </b>{{ player.role}} </p>
+          <p><b>Batting Style : </b>{{ player.battingStyle}} </p>
+          <p><b>Bowling Style : </b>{{ player.bowlingStyle}} </p>
+        </div>
+      </div>
+    </div>
+  </div>
